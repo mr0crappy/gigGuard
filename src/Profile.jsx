@@ -1,10 +1,10 @@
 import { User, MapPin, IndianRupee, Shield, ArrowLeft } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import React, { useState, useEffect } from "react";
+import profileImg from "./assets/unnamed.jpg";
 
 export default function Profile() {
     const [imgLoaded, setImgLoaded] = useState(false);
-const profileImg = "https://i.pravatar.cc/150";
 
 useEffect(() => {
   const img = new Image();

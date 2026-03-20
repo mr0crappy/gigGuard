@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import profileImg from "./assets/unnamed.jpg";
 import {
   User,
   MapPin,
@@ -30,8 +31,6 @@ export default function App() {
 
   // Profile image preload
   const [imgLoaded, setImgLoaded] = useState(false);
-  const profileImg = "https://i.pravatar.cc/100";
-
   useEffect(() => {
     const img = new Image();
     img.src = profileImg;
