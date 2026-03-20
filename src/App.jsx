@@ -37,7 +37,7 @@ export default function App() {
     img.onload = () => setImgLoaded(true);
   }, []);
 
-  const savedPlan = JSON.parse(localStorage.getItem("selectedPlan"));
+  const savedPlan = JSON.parse(localStorage.getItem("selectedPlan") || "null");
   const basePremium = savedPlan?.price || 120;
 
   const [selectedCard, setSelectedCard] = useState(null);
