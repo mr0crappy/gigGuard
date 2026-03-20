@@ -86,12 +86,22 @@ export default function App() {
           AI Insurance
         </h1>
 
-        <button
-          onClick={() => navigate("/profile")}
-          className="text-sm text-gray-300 hover:text-white"
-        >
-          Profile
-        </button>
+        <div
+  onClick={() => navigate("/profile")}
+  className="cursor-pointer hover:scale-110 transition"
+>
+  {imgLoaded ? (
+    <div className="p-[2px] rounded-full bg-gradient-to-r from-green-400 to-blue-500">
+      <img
+        src={profileImg}
+        alt="profile"
+        className="w-10 h-10 rounded-full"
+      />
+    </div>
+  ) : (
+    <div className="w-10 h-10 rounded-full bg-gray-700 animate-pulse" />
+  )}
+</div>
       </div>
 
       {/* Profile Card */}
