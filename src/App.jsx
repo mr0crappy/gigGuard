@@ -83,7 +83,7 @@ export default function App() {
       <div className="flex justify-between items-center mb-6 z-10 relative">
         <h1 className="text-3xl font-bold flex items-center gap-2">
           <Activity className="text-green-400" />
-          AI Insurance
+          GigGuard
         </h1>
 
         <div
